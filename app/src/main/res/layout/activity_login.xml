@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_bg"
+    android:orientation="vertical"
+    tools:context="com.edu.myacademy.LoginActivity">
+
+    <include layout="@layout/header" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/myacademy_login"
+            android:src="@drawable/login" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/box_round"
+        android:orientation="vertical"
+        android:paddingEnd="15dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingStart="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/emailEditText"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/edit_text_round"
+                android:hint="@string/email"
+                android:paddingLeft="5dp"
+                android:paddingStart="5dp" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                custom:hintEnabled="false"
+                android:layout_marginTop="15dp"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/passwordEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center_horizontal"
+
+                    android:background="@drawable/edit_text_round"
+                    android:hint="@string/password"
+                    android:inputType="textPassword"
+                    android:paddingLeft="5dp"
+                    android:paddingStart="5dp" />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <com.edu.myacademy.TextView.CustomButton
+                android:id="@+id/login_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/button_round"
+                android:text="@string/login"
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                custom:customButtonFont="ProximaNovaAltRegular.otf" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/stayCheekBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/stay_login"
+                    android:textColor="#ffffff" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.edu.myacademy.TextView.CustomTextView
+            android:id="@+id/forgotPassTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:padding="10dp"
+            android:text="@string/forget_pass"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            custom:customFont="ProximaNovaAltLight.otf" />
+
+        <com.edu.myacademy.TextView.CustomButton
+            android:id="@+id/registrationButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/button_round"
+            android:text="@string/registration"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            custom:customButtonFont="ProximaNovaAltRegular.otf" />
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true">
+
+            <include layout="@layout/footer" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

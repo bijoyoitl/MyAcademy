@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_registration"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.edu.myacademy.RegistrationActivity">
+
+    <LinearLayout
+        android:id="@+id/rgHeaderLayout"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/top_hear_color">
+
+        <com.edu.myacademy.TextView.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/registration_screen"
+            android:textColor="#ffffff"
+            android:textSize="22sp"
+            app:customFont="ProximaNovaAltThin.otf" />
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rgHeaderLayout"
+        android:background="@drawable/app_bg">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="11dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginStart="20dp"
+                    android:background="@drawable/box_round"
+                    android:orientation="vertical"
+                    android:paddingBottom="10dp"
+                    android:paddingEnd="15dp"
+                    android:paddingLeft="15dp"
+                    android:paddingStart="15dp"
+                    android:paddingTop="10dp">
+
+                    <EditText
+                        android:id="@+id/nameEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:background="@drawable/edit_text_round"
+                        android:hint="@string/name"
+                        android:paddingLeft="5dp"
+                        android:paddingStart="5dp" />
+
+                    <EditText
+                        android:id="@+id/emailEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/edit_text_round"
+                        android:hint="@string/email"
+                        android:paddingLeft="5dp"
+                        android:paddingStart="5dp" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/edit_text_round">
+
+                        <Spinner
+                            android:id="@+id/userTypeSpinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/edit_text_round">
+
+                        <Spinner
+                            android:id="@+id/classTypeSpinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+
+                    </LinearLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        app:hintEnabled="false">
+
+                        <EditText
+                            android:id="@+id/passwordEditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:background="@drawable/edit_text_round"
+                            android:hint="@string/password"
+                            android:inputType="textPassword"
+                            android:paddingLeft="5dp"
+                            android:paddingStart="5dp" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginTop="15dp"
+                        app:hintEnabled="false">
+                        <EditText
+                            android:id="@+id/confirmPasswordEditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+
+                            android:background="@drawable/edit_text_round"
+                            android:hint="@string/confirm_pass"
+                            android:inputType="textPassword"
+                            android:paddingLeft="5dp"
+                            android:paddingStart="5dp" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+
+                    <CheckBox
+                        android:id="@+id/termConditionCheekBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:paddingLeft="5dp"
+                        android:text="@string/term_condition"
+                        android:textColor="#ffffff" />
+
+                    <com.edu.myacademy.TextView.CustomButton
+                        android:id="@+id/reg_button"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/button_round"
+                        android:onClick="reg_button"
+                        android:text="@string/reg_button"
+                        android:textAllCaps="false"
+                        android:textColor="#ffffff"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:customButtonFont="ProximaNovaAltRegular.otf" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <include layout="@layout/footer" />
+    </LinearLayout>
+
+</RelativeLayout>

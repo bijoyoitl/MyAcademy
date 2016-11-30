@@ -1,0 +1,74 @@
+<resources>
+
+    <string-array name="drawer_item">
+        <item>ড্যাশবোর্ড</item>
+        <item>ভর্তি প্রস্তুতি</item>
+        <item>শ্রেণি ভিত্তিক পড়াশুনা</item>
+        <item>ডিজিটাল বই</item>
+        <item>মডেল টেস্ট</item>
+        <item>কুইজ</item>
+        <item>ভিডিও ডকুমেন্ট</item>
+        <item>ক্যাম্পাস</item>
+        <item>সাধারণ জ্ঞান</item>
+        <item>বিসিএস</item>
+        <item>সেনাবাহিনী </item>
+        <item>নৌবাহিনী</item>
+        <item>বিমানবাহিনী</item>
+        <item>আই এস এস বি</item>
+        <item>শিশু কর্ণার </item>
+        <item> বিশ্ববিদ্যালয়ে ভর্তি তথ্য</item>
+        <item>শিক্ষা-চাকরি তথ্য </item>
+        <item>মতামত</item>
+        <item>গ্যালারী </item>
+        <item>টিম</item>
+    </string-array>
+
+    <string-array name="dashbord_item">
+        <item>ভর্তি প্রস্তুতি</item>
+        <item>শ্রেণি ভিত্তিক পড়াশুনা</item>
+        <item>ডিজিটাল বই</item>
+        <item>মডেল টেস্ট</item>
+        <item>কুইজ</item>
+        <item>ভিডিও ডকুমেন্ট</item>
+        <item>ক্যাম্পাস</item>
+        <item>সাধারণ জ্ঞান</item>
+        <item>বিসিএস(BCS)</item>
+        <item>সেনাবাহিনী (Army) </item>
+        <item>নৌবাহিনী (Navy)</item>
+        <item>বিমানবাহিনী (Air Force)</item>
+        <item>আই এস এস বি</item>
+        <item>শিশু কর্ণার </item>
+        <item> বিশ্ববিদ্যালয়ে ভর্তি তথ্য</item>
+        <item>শিক্ষা-চাকরি তথ্য </item>
+        <item>মতামত</item>
+        <item>গ্যালারী(Gallery)</item>
+        <item>টিম(Team)</item>
+    </string-array>
+
+    <string name="app_name">My Academy</string>
+    <string name="myacademy_login">My Academy Login</string>
+    <string name="email">Email or Mobile</string>
+    <string name="password">Password</string>
+    <string name="login">Log In</string>
+    <string name="stay_login">Stay Logged in</string>
+    <string name="forget_pass">Forgot Password?</string>
+    <string name="registration">Register for My Academy?</string>
+    <string name="myacademy">©My Academy. All rights reserved.</string>
+    <string name="registration_screen">My Academy Registration</string>
+    <string name="student">Student</string>
+    <string name="teacher">Teacher</string>
+    <string name="general_user">General User</string>
+    <string name="name">Name</string>
+    <string name="confirm_pass">Confirm Password</string>
+    <string name="term_condition">I accept term &amp; Conditions</string>
+    <string name="reg_button">Registration</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="profile">Profile</string>
+    <string name="logout">Logout</string>
+    <string name="bijoy_dashbord">Bijoy DashBord</string>
+    <string name="dashboard">" DashBoard"</string>
+</resources>
